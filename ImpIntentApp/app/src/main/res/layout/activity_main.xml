@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    //text view untuk "about me"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="About Me"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    //button untuk profil
+    <Button
+        android:id="@+id/buttonBio"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:text="My Profile"
+        android:textSize="20sp"
+        app:backgroundTint="#117126"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    //button untuk link github
+    <Button
+        android:id="@+id/Github"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Github"
+        android:text="Github"
+        android:textSize="20sp"
+        app:backgroundTint="#117126"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBio" />
+
+    //button untuk link instagram
+    <Button
+        android:id="@+id/Instagram"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Instagram"
+        android:text="Instagram"
+        android:textSize="20sp"
+        app:backgroundTint="#117126"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Github" />
+
+    //button untuk link twitter
+    <Button
+        android:id="@+id/Twitter"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:onClick="Twitter"
+        android:text="Twitter"
+        android:textSize="20sp"
+        app:backgroundTint="#117126"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instagram" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
